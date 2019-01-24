@@ -11,14 +11,23 @@ class Person {
     }
 }
 
-const fred = new Instructor({
-    name: 'Fred',
-    location: 'Bedrock',
-    age: 37,
-    gender: 'male',
-    favLanguage: 'JavaScript',
-    specialty: 'Front-end',
-    catchPhrase: `Don't forget the homies`
+//test person!!
+const neeko = new Person({
+    name: 'neeko',
+    location: 'River',
+    age: 4,
+    gender: 'lizard',
   });
 
-  fred(speak);
+  class Instructor extends Person{
+      constructor(trait){
+          super(trait);
+          this.specialty = trait.specialty;
+          this.favLangauge = trait.favLangauge;
+          this.catchPrase = trait.catchPrase;
+      }
+      demo(subject) {
+        return `Today we are learning about ${subject}`;}
+    grade(student, subject) {
+        return `${student.name} receives a perfect score on ${subject}`;}
+  }
