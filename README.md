@@ -51,15 +51,15 @@ const fred = new Instructor({
 });
 ```
 
-#### Person
+#### Personx
 
 * First we need a Person class. This will be our `base-class`
 * Person receives `name` `age` `location` `gender` all as props
 * Person receives `speak` as a method.
 * This method logs out a phrase `Hello my name is Fred, I am from Bedrock` where `name` and `location` are the object's own props
 
-#### Instructor
-
+#### Instructorx
+x
 * Now that we have a Person as our base class, we'll build our Instructor class.
 * Instructor uses the same attributes that have been set up by Person
 * Instructor has the following unique props:
@@ -70,7 +70,7 @@ const fred = new Instructor({
   * `demo` receives a `subject` string as an argument and logs out the phrase 'Today we are learning about {subject}' where subject is the param passed in.
   * `grade` receives a `student` object and a `subject` string as arguments and logs out '{student.name} receives a perfect score on {subject}'
 
-#### Student
+#### Studentx
 
 * Now we need some students!
 * Student uses the same attributes that have been set up by Person
@@ -83,7 +83,7 @@ const fred = new Instructor({
   * `PRAssignment` a method that receives a subject as an argument and logs out that the `student.name has submitted a PR for {subject}`
   * `sprintChallenge` similar to PRAssignment but logs out `student.name has begun sprint challenge on {subject}`
 
-#### Project Mananger
+#### Project Manangerx
 
 * Now that we have instructors and students, we'd be nowhere without our PM's
 * ProjectManagers are extensions of Instructors

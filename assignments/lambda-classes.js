@@ -77,3 +77,31 @@ const yeri = new Student({
     className: 'WEB17',
     favSubjects: 'Place And Control'
 });
+
+class ProjectManager extends Instructor { 
+    constructor (trait) {
+        super(trait);
+        this.gradClassName = trait.gradClassName;
+        this.favInstructor = trait.favInstructor;
+    }
+    standUp (slackChannel) {
+        return `${this.name} announces to ${slackChannel}, @channel standy times!`;
+    }
+    debugsCode (student, subject) {
+        return `${this.name} debugs ${student.name}'s code on ${subject}`;
+    }
+}
+
+//test PM
+
+const mrf = new ProjectManager({
+    name: 'MR.F', 
+    age : 25, 
+    location: 'Undiscloused location', 
+    gender: 'M',
+    specialty: 'the swarts',
+    favLangauge: 'sandscript',
+    catchPrase: 'USE THE SWARTS!'
+    gradClassName: 'WEB -1',
+    favInstructor: 'Josh'
+} 
